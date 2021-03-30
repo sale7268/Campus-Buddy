@@ -105,7 +105,7 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://ibb.co/rQrHBXm" width=600>
+<img src="https://i.ibb.co/b69X4GP/Initial-wireframe.png" width=600>
 * Using figma
 
 ### [BONUS] Digital Wireframes & Mockups
