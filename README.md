@@ -116,5 +116,14 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+
+**User**
+| Property   | Type   | Description                                                          |
+|------------|--------|----------------------------------------------------------------------|
+| userId     | Int    | Unique ID associated with a user                                     |
+| username   | String | Unique name associated with user                                     |
+| email      | String | Campus/CSUMB Email.                                                  |
+| profileImg | file   | Profile picture of user. Could also just use image of email account. |
+| Password   | String | Password to log in. Maybe unnecessary if logging in with email.      |
 ### Networking
 - Google map & calendar API
