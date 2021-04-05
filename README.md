@@ -125,5 +125,15 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 | email      | String | Campus/CSUMB Email.                                                  |
 | profileImg | file   | Profile picture of user. Could also just use image of email account. |
 | Password   | String | Password to log in. Maybe unnecessary if logging in with email.      |
+
+**Events**
+| Property   | Type     | Description                                                          |
+|------------|----------|----------------------------------------------------------------------|
+| eventName  | String   | Event name                                                           |
+| eventDate  | DateTime | Date of event                                                        |
+| eventLink  | String   | Link for more event details                                          |
+| creatDate  | DateTime | Date the event was posted                                            |
+| eventDesc  | String   | Brief description of the event                                       |
+
 ### Networking
 - Google map & calendar API
