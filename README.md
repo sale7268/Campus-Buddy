@@ -127,13 +127,13 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 | Password   | String | Password to log in. Maybe unnecessary if logging in with email.      |
 
 **Events**
-| Property   | Type   | Description                                                          |
-|------------|--------|----------------------------------------------------------------------|
-| eventName  | String | Event name                                                           |
-| eventDate  | Date   | Date of event                                                        |
-| eventLink  | String | Link for more event details                                          |
-| creatDate  | Date   | Date the event was posted                                            |
-| eventDesc  | String | Brief description of the event                                       |
+| Property   | Type     | Description                                                          |
+|------------|----------|----------------------------------------------------------------------|
+| eventName  | String   | Event name                                                           |
+| eventDate  | DateTime | Date of event                                                        |
+| eventLink  | String   | Link for more event details                                          |
+| creatDate  | DateTime | Date the event was posted                                            |
+| eventDesc  | String   | Brief description of the event                                       |
 
 ### Networking
 - Google map & calendar API
