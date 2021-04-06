@@ -139,6 +139,9 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 - Google map & calendar API
 
 #### Network Requests
+    - Log in User
+        - (Read/GET) Get user info
+
     - Events Screen
         - (Read/GET) Show all created Events
         - (Create/POST) Add an Event
