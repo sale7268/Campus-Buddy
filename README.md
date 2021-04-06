@@ -137,3 +137,9 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 
 ### Networking
 - Google map & calendar API
+
+#### Network Requests
+    - Events Screen
+        - (Read/GET) Show all created Events
+        - (Create/POST) Add an Event
+        - (Delete) Delete an Event a user has created
