@@ -1,0 +1,6 @@
+framework module Pods_Campus_Buddy_Campus_BuddyUITests {
+  umbrella header "Pods-Campus Buddy-Campus BuddyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
