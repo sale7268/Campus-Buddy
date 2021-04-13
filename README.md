@@ -113,9 +113,7 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
 
 **User**
 | Property   | Type   | Description                                                          |
@@ -147,3 +145,7 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
     - (Read/GET) Show all created Events
     - (Create/POST) Add an Event
     - (Delete) Delete an Event a user has created
+
+## Sprint 1
+
+<img src="http://g.recordit.co/0pdR7ZURCs.gif" width=600>
