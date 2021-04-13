@@ -147,5 +147,10 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
     - (Delete) Delete an Event a user has created
 
 ## Sprint 1
+### User registers and logs in
+<img src="http://g.recordit.co/0pdR7ZURCs.gif" width=400>
 
-<img src="http://g.recordit.co/0pdR7ZURCs.gif" width=600>
+
+## Sprint 2
+### User logs in and stays logged in
+<img src="https://i.imgur.com/0UsBNEJ.gif" width=400>
