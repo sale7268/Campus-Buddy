@@ -30,23 +30,23 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 
 **Required Must-have Stories**
 
-* Log in/sign up using CSUMB credentials. (initiating database using Parse) - Shawn Deppe
-* Land on Homescreen with navigation items. - Isidro Perez, Bryan Fowles
-* Be able to access my weekly class schedule (option: google calander api) - Hamza Saleem, Miguel Espitia
-* Be able to navigate to my class through in-app navigation (google map api) - Denize Patric Ignacio, Hamza Saleem
-* Be able to manually navigate to the building specified by user (In Mapping Section) - Denize Patric Ignacio, Alexis Caasi
-* Be able to receieve notifications about alerts/events going on right now - Alexis Caasi
-* Be able to access campus resources information - Armon Bakhtar
-* Be able to access upcoming events - Efrain Pamatz
-* Be able to stay logged in - Roober Gerard Cruz, Carmelo Hernandez
-* Be able to logout of the app - Isidro Perez
+- [x] Log in/sign up using CSUMB credentials. (initiating database using Parse) - Shawn Deppe
+- [ ] Land on Homescreen with navigation items. - Isidro Perez, Bryan Fowles
+- [ ] Be able to access my weekly class schedule (option: google calander api) - Hamza Saleem, Miguel Espitia
+- [ ] Be able to navigate to my class through in-app navigation (google map api) - Denize Patric Ignacio, Hamza Saleem
+- [ ] Be able to manually navigate to the building specified by user (In Mapping Section) - Denize Patric Ignacio, Alexis Caasi
+- [ ] Be able to receieve notifications about alerts/events going on right now - Alexis Caasi
+- [ ] Be able to access campus resources information - Armon Bakhtar
+- [ ] Be able to access upcoming events - Efrain Pamatz
+- [ ] Be able to stay logged in - Roober Gerard Cruz, Carmelo Hernandez
+- [ ] Be able to logout of the app - Isidro Perez
 
 **Optional Nice-to-have Stories**
 
-* Be able to click on a class from class schedule part and it navigating you to the building
-* Connect to CSUMB System
-* Visitor version, not have to log in. 
-* Parking spaces and how to pay for it.
+- [ ] Be able to click on a class from class schedule part and it navigating you to the building
+- [ ] Connect to CSUMB System
+- [ ] Visitor version, not have to log in. 
+- [ ] Parking spaces and how to pay for it.
 
 ### 2. Screen Archetypes
 
