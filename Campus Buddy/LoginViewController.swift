@@ -7,30 +7,15 @@
 
 import UIKit
 import Parse
-import FSCalendar
 
-class LoginViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource{
-    private weak var calendar: FSCalendar!
-
+class LoginViewController: UIViewController{
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        let calendar = FSCalendar(frame: CGRect(x: 0, y: 0, width: 320, height: 300))
-//        calendar.dataSource = self
-//        calendar.delegate = self
-//        view.addSubview(calendar)
-//        self.calendar = calendar
-        
-        
-        
         // Do any additional setup after loading the view.
     }
-//    func calendar(calendar: FSCalendar!, hasEventForDate date: NSDate!) -> Bool {
-//        return shouldShowEventDot
-//    }
     
     override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
