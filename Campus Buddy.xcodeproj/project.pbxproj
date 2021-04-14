@@ -19,6 +19,7 @@
 		9ABE30E82612EC6700D5093E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE30E62612EC6700D5093E /* LaunchScreen.storyboard */; };
 		9ABE30F32612EC6700D5093E /* Campus_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE30F22612EC6700D5093E /* Campus_BuddyTests.swift */; };
 		9ABE30FE2612EC6700D5093E /* Campus_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE30FD2612EC6700D5093E /* Campus_BuddyUITests.swift */; };
+		A6A9791726267785004E12D7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9791626267785004E12D7 /* CalendarViewController.swift */; };
 		DD3583B41152F8AC418ACD95 /* Pods_Campus_BuddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A985BB843960D71026A0E219 /* Pods_Campus_BuddyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		9ABE30FD2612EC6700D5093E /* Campus_BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campus_BuddyUITests.swift; sourceTree = "<group>"; };
 		9ABE30FF2612EC6700D5093E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D22845278DE9A76C3A2EEEE /* Pods-Campus BuddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus BuddyTests.debug.xcconfig"; path = "Target Support Files/Pods-Campus BuddyTests/Pods-Campus BuddyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6A9791626267785004E12D7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A985BB843960D71026A0E219 /* Pods_Campus_BuddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Campus_BuddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3208044F459200B995D5645 /* Pods-Campus Buddy-Campus BuddyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus Buddy-Campus BuddyUITests.release.xcconfig"; path = "Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DC1C66CAD66A23BDCB80C9B8 /* Pods-Campus Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus Buddy.release.xcconfig"; path = "Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				9ABE30E92612EC6700D5093E /* Info.plist */,
 				297F69522625375600A250B9 /* SignupViewController.swift */,
 				297F69572625376400A250B9 /* LoginViewController.swift */,
+				A6A9791626267785004E12D7 /* CalendarViewController.swift */,
 			);
 			path = "Campus Buddy";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A9791726267785004E12D7 /* CalendarViewController.swift in Sources */,
 				297F69582625376400A250B9 /* LoginViewController.swift in Sources */,
 				297F694E2625374200A250B9 /* HomeScreenViewController.swift in Sources */,
 				297F69532625375600A250B9 /* SignupViewController.swift in Sources */,
