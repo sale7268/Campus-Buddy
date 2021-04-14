@@ -3,6 +3,7 @@
 //  Campus Buddy
 //
 //  Created by Miguel Angel Espitia on 4/13/21.
+//  Modified by Hamza Saleem
 //
 
 import UIKit
@@ -14,6 +15,21 @@ class CalendarViewController: UIViewController, FSCalendarDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        var button = UIButton(frame: CGRect(origin: CGPoint(x: self.view.frame.width / 2, y: self.view.frame.size.height - 70), size: CGSize(width: 50, height: 50)))
+//        //button.backgroundColor = UIColor.systemYellow
+//        let image = UIImage(named: "plus.circle") as UIImage?
+//        button.setBackgroundImage(image, for: .normal)
+//        self.navigationController?.view.addSubview(button)
+        
+        let image = UIImage(named: "plus.png")
+        let button = UIButton(type: UIButton.ButtonType.custom)
+        button.frame = CGRect(origin: CGPoint(x: self.view.frame.width / 2 - 25, y: self.view.frame.size.height - 80), size: CGSize(width: 50, height: 50))
+        button.setImage(image, for: .normal)
+        button.addTarget(self, action: #selector(clicked), for: .touchUpInside)
+
+        //button.backgroundColor = .lightGray
+        self.view.addSubview(button)
+        
         calendar.delegate = self
         calendar.appearance.weekdayTextColor = UIColor.blue
         calendar.appearance.headerTitleColor = UIColor.blue
@@ -22,6 +38,10 @@ class CalendarViewController: UIViewController, FSCalendarDelegate{
         calendar.appearance.todaySelectionColor = UIColor.black
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func clicked(){
+        print("Button clicked")
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition){
