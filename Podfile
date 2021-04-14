@@ -7,6 +7,7 @@ target 'Campus Buddy' do
 
   # Pods for Campus Buddy
   pod 'Parse'
+  pod 'FSCalendar'
 
   target 'Campus BuddyTests' do
     inherit! :search_paths
