@@ -10,16 +10,12 @@ import UIKit
 import FSCalendar
 
 class CalendarViewController: UIViewController, FSCalendarDelegate{
+    
     @IBOutlet var calendar: FSCalendar!
-
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        var button = UIButton(frame: CGRect(origin: CGPoint(x: self.view.frame.width / 2, y: self.view.frame.size.height - 70), size: CGSize(width: 50, height: 50)))
-//        //button.backgroundColor = UIColor.systemYellow
-//        let image = UIImage(named: "plus.circle") as UIImage?
-//        button.setBackgroundImage(image, for: .normal)
-//        self.navigationController?.view.addSubview(button)
         
         let image = UIImage(named: "plus.png")
         let button = UIButton(type: UIButton.ButtonType.custom)
@@ -42,7 +38,14 @@ class CalendarViewController: UIViewController, FSCalendarDelegate{
     
     @objc func clicked(){
         print("Button clicked")
+        showAddClassView()
     }
+    
+    func showAddClassView() {
+        if let mvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddClassViewController") as? AddClassViewController {
+          self.present(mvc, animated: true, completion: nil)
+        }
+      }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition){
         let formatter = DateFormatter()

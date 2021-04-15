@@ -11,7 +11,7 @@
         <!--Calendar View Controller-->
         <scene sceneID="Htb-s5-3yC">
             <objects>
-                <viewController id="XFg-2s-Ecn" customClass="CalendarViewController" customModule="Campus_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="XFg-2s-Ecn" customClass="CalendarViewController" customModule="Campus_Buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4H0-Ym-Kdb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,11 +104,75 @@
                     <navigationItem key="navigationItem" id="akB-aS-h2E"/>
                     <connections>
                         <outlet property="calendar" destination="Mgo-0f-2Ms" id="cwQ-sr-8Mb"/>
+                        <outlet property="tableView" destination="dVQ-Fm-oVY" id="yMx-fN-ZxJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cn-Dv-f1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1030.4347826086957" y="3002.6785714285711"/>
+            <point key="canvasLocation" x="-987" y="3003"/>
+        </scene>
+        <!--Add Class View Controller-->
+        <scene sceneID="GEo-WB-1Ae">
+            <objects>
+                <viewController storyboardIdentifier="AddClassViewController" modalPresentationStyle="fullScreen" id="kkx-2b-dhM" customClass="AddClassViewController" customModule="Campus_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wIB-x7-3HO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-Bk-uwv">
+                                <rect key="frame" x="87" y="241" width="241" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Building Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ual-Sj-9ka">
+                                <rect key="frame" x="87" y="309" width="241" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HH" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-LV-Edi">
+                                <rect key="frame" x="87" y="375" width="117" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-1J-OhM">
+                                <rect key="frame" x="87" y="445" width="241" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Submit Class">
+                                    <color key="titleColor" red="0.22385730400529488" green="0.2688476147870047" blue="0.67171717171717171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="kkx-2b-dhM" eventType="touchUpInside" id="aUi-nT-jc2"/>
+                                    <segue destination="cmT-4r-cv4" kind="presentation" identifier="AddClassToCalendarViewSegue" id="aXm-x7-3q2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="58j-m1-g2D">
+                                <rect key="frame" x="211" y="375" width="117" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pyW-Sv-nLe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MUg-bo-qaE"/>
+                    <connections>
+                        <outlet property="buildingNameField" destination="ual-Sj-9ka" id="DBA-hg-gsn"/>
+                        <outlet property="classNameField" destination="Eog-Bk-uwv" id="Lxo-gB-qcO"/>
+                        <outlet property="timeHourField" destination="hk8-LV-Edi" id="hQr-gk-RIN"/>
+                        <outlet property="timeMinuteField" destination="58j-m1-g2D" id="ykv-Eb-KkS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31y-cN-7rq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="3002.6785714285711"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="ARb-YN-Jzm">
@@ -331,7 +395,7 @@
         <!--Navigation Controller-->
         <scene sceneID="poF-kf-s0a">
             <objects>
-                <navigationController id="cmT-4r-cv4" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="cmT-4r-cv4" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1te-li-Pil">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -351,6 +415,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
