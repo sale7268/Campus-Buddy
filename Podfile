@@ -8,6 +8,8 @@ target 'Campus Buddy' do
   # Pods for Campus Buddy
   pod 'Parse'
   pod 'FSCalendar'
+  pod 'AlamofireImage'
+  
 
   target 'Campus BuddyTests' do
     inherit! :search_paths

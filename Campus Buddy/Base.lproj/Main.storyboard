@@ -85,8 +85,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="buildingLabel" destination="dKJ-8I-fb3" id="30e-nw-ZTT"/>
-                                            <outlet property="classLabel" destination="m8k-Wm-1xK" id="K9U-6a-RDC"/>
-                                            <outlet property="classNameLabel" destination="m8k-Wm-1xK" id="kjw-iH-uNP"/>
+                                            <outlet property="classLabel" destination="m8k-Wm-1xK" id="BPU-ny-7IW"/>
                                             <outlet property="timeLabel" destination="PdW-SO-JnM" id="ivW-S3-y2v"/>
                                         </connections>
                                     </tableViewCell>
@@ -134,12 +133,23 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HH" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-LV-Edi">
                                 <rect key="frame" x="87" y="375" width="117" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2j-vs-SAw">
+                                <rect key="frame" x="87" y="431" width="61" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YYYY" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVu-GK-gue">
+                                <rect key="frame" x="257" y="431" width="71" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-1J-OhM">
-                                <rect key="frame" x="87" y="445" width="241" height="44"/>
+                                <rect key="frame" x="87" y="489" width="241" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -154,7 +164,12 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="58j-m1-g2D">
                                 <rect key="frame" x="211" y="375" width="117" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bqP-bH-GPb">
+                                <rect key="frame" x="171" y="431" width="61" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -166,6 +181,9 @@
                     <connections>
                         <outlet property="buildingNameField" destination="ual-Sj-9ka" id="DBA-hg-gsn"/>
                         <outlet property="classNameField" destination="Eog-Bk-uwv" id="Lxo-gB-qcO"/>
+                        <outlet property="dateDayField" destination="bqP-bH-GPb" id="2tU-2C-Bn8"/>
+                        <outlet property="dateMontField" destination="F2j-vs-SAw" id="HHf-6c-X96"/>
+                        <outlet property="dateYearField" destination="GVu-GK-gue" id="e7c-6S-WN2"/>
                         <outlet property="timeHourField" destination="hk8-LV-Edi" id="hQr-gk-RIN"/>
                         <outlet property="timeMinuteField" destination="58j-m1-g2D" id="ykv-Eb-KkS"/>
                     </connections>
