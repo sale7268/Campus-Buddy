@@ -194,7 +194,7 @@
 				9ABE30D42612EC6600D5093E /* Sources */,
 				9ABE30D52612EC6600D5093E /* Frameworks */,
 				9ABE30D62612EC6600D5093E /* Resources */,
-				76FBB5EB299F4865E8860740 /* [CP] Embed Pods Frameworks */,
+				D85F107421E05E407A1D5A5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,7 +232,7 @@
 				9ABE30F52612EC6700D5093E /* Sources */,
 				9ABE30F62612EC6700D5093E /* Frameworks */,
 				9ABE30F72612EC6700D5093E /* Resources */,
-				A743C8AA18CB2188E4E9DDA3 /* [CP] Embed Pods Frameworks */,
+				1748084A2D486C195F520A0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,24 +314,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		76FBB5EB299F4865E8860740 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A743C8AA18CB2188E4E9DDA3 /* [CP] Embed Pods Frameworks */ = {
+		1748084A2D486C195F520A0E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -346,6 +329,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D85F107421E05E407A1D5A5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD52E13E72F17BB1939EE77E /* [CP] Check Pods Manifest.lock */ = {

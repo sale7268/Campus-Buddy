@@ -14,6 +14,9 @@ class AddClassViewController: UIViewController {
     @IBOutlet weak var buildingNameField: UITextField!
     @IBOutlet weak var timeHourField: UITextField!
     @IBOutlet weak var timeMinuteField: UITextField!
+    @IBOutlet weak var dateMontField: UITextField!
+    @IBOutlet weak var dateDayField: UITextField!
+    @IBOutlet weak var dateYearField: UITextField!
     
     @IBAction func submitButton(_ sender: Any) {
         let classes = PFObject(className: "Classes")
@@ -23,6 +26,12 @@ class AddClassViewController: UIViewController {
         classes["classTimeHour"] = timeHourField.text!
         classes["classTimeMinute"] = timeMinuteField.text!
         classes["author"] = PFUser.current()!
+        
+        let month = dateMontField.text!
+        let day = dateDayField.text!
+        let year = dateYearField.text!
+        let dateFormat = month + "-" + day + "-" + year
+        classes["classDate"] = dateFormat
         
         
         classes.saveInBackground { (success, error) in
