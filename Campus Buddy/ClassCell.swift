@@ -2,7 +2,7 @@
 //  ClassCell.swift
 //  Campus Buddy
 //
-//  Created by user190273 on 4/15/21.
+//  Created by Hamza Saleem on 4/15/21.
 //
 
 import UIKit
