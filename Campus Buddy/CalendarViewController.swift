@@ -9,11 +9,15 @@
 import UIKit
 import FSCalendar
 import AlamofireImage
+import Parse
 
 class CalendarViewController: UIViewController, UITableViewDataSource,UITableViewDelegate, FSCalendarDelegate{
     
     @IBOutlet var calendar: FSCalendar!
     @IBOutlet weak var tableView: UITableView!
+    
+    var classes = [PFObject]()
+    var currentUser = PFUser.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +45,22 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "Classes")
+        query.whereKey("author", equalTo: currentUser)
+        query.includeKeys(["class_name", "classDate", "buildingName", "classTimeHour", "classTimeMinute"])
+        query.limit = 20
+        
+        query.findObjectsInBackground { (classes, error) in
+            if classes != nil {
+                self.classes = classes!
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     //add class Button calls this fcuntion when clicked
     @objc func clicked(){
         print("Button clicked")
@@ -62,11 +82,24 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return classes.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return classes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let classSchedule = classes[indexPath.section]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClassCell") as! ClassCell
+        
+        cell.classLabel.text = classSchedule["class_name"] as! String
+        cell.buildingLabel.text = classSchedule["buildingName"] as! String
+        cell.timeLabel.text = classSchedule["classTimeHour"] as? String
+        
+        
         return cell
     }
     
