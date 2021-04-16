@@ -180,7 +180,7 @@
                     <navigationItem key="navigationItem" id="MUg-bo-qaE"/>
                     <connections>
                         <outlet property="buildingNameField" destination="ual-Sj-9ka" id="DBA-hg-gsn"/>
-                        <outlet property="classNameField" destination="Eog-Bk-uwv" id="Lxo-gB-qcO"/>
+                        <outlet property="classNameField" destination="Eog-Bk-uwv" id="Zod-3u-oot"/>
                         <outlet property="dateDayField" destination="bqP-bH-GPb" id="2tU-2C-Bn8"/>
                         <outlet property="dateMontField" destination="F2j-vs-SAw" id="HHf-6c-X96"/>
                         <outlet property="dateYearField" destination="GVu-GK-gue" id="e7c-6S-WN2"/>
