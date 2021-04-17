@@ -85,19 +85,21 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
         return classes.count
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return classes.count
-    }
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return classes.count
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let classSchedule = classes[indexPath.section]
+        let classSchedule = classes[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClassCell") as! ClassCell
         
         cell.classLabel.text = classSchedule["class_name"] as! String
         cell.buildingLabel.text = classSchedule["buildingName"] as! String
-        cell.timeLabel.text = classSchedule["classTimeHour"] as? String
+        let timeH = classSchedule["classTimeHour"] as! String
+        let timeM = classSchedule["classTimeMinute"] as! String
+        cell.timeLabel.text = timeH + ":" + timeM as String
         
         
         return cell
