@@ -38,7 +38,7 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 - [ ] Be able to receieve notifications about alerts/events going on right now - Alexis Caasi
 - [ ] Be able to access campus resources information - Armon Bakhtar
 - [ ] Be able to access upcoming events - Efrain Pamatz
-- [ ] Be able to stay logged in - Roober Gerard Cruz, Carmelo Hernandez
+- [x] Be able to stay logged in - Roober Gerard Cruz, Carmelo Hernandez
 - [ ] Be able to logout of the app - Isidro Perez
 
 **Optional Nice-to-have Stories**
