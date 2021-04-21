@@ -14,6 +14,8 @@
 		99CB8C02048B02C36AE12936 /* Pods_Campus_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC1BC91A14929E7CE3932BA /* Pods_Campus_Buddy.framework */; };
 		9A79ED4C26281F3300E074D5 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79ED4B26281F3300E074D5 /* ClassCell.swift */; };
 		9A79ED512628256500E074D5 /* AddClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79ED502628256500E074D5 /* AddClassViewController.swift */; };
+		9A992090263024610021698F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99208F263024610021698F /* MapViewController.swift */; };
+		9A992095263026E60021698F /* GoogleMapsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992094263026E60021698F /* GoogleMapsHelper.swift */; };
 		9ABE30DC2612EC6600D5093E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE30DB2612EC6600D5093E /* AppDelegate.swift */; };
 		9ABE30DE2612EC6600D5093E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE30DD2612EC6600D5093E /* SceneDelegate.swift */; };
 		9ABE30E32612EC6600D5093E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE30E12612EC6600D5093E /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		793B264F4E3C2BEB1FFA75C9 /* Pods-Campus BuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus BuddyTests.release.xcconfig"; path = "Target Support Files/Pods-Campus BuddyTests/Pods-Campus BuddyTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A79ED4B26281F3300E074D5 /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		9A79ED502628256500E074D5 /* AddClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassViewController.swift; sourceTree = "<group>"; };
+		9A99208F263024610021698F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9A992094263026E60021698F /* GoogleMapsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleMapsHelper.swift; path = ../../../../Downloads/Resources/GoogleMapsHelper.swift; sourceTree = "<group>"; };
 		9ABE30D82612EC6600D5093E /* Campus Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Campus Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABE30DB2612EC6600D5093E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ABE30DD2612EC6600D5093E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,10 +151,12 @@
 				9ABE30E62612EC6700D5093E /* LaunchScreen.storyboard */,
 				9ABE30E92612EC6700D5093E /* Info.plist */,
 				297F69522625375600A250B9 /* SignupViewController.swift */,
+				9A992094263026E60021698F /* GoogleMapsHelper.swift */,
 				297F69572625376400A250B9 /* LoginViewController.swift */,
 				A6A9791626267785004E12D7 /* CalendarViewController.swift */,
 				9A79ED4B26281F3300E074D5 /* ClassCell.swift */,
 				9A79ED502628256500E074D5 /* AddClassViewController.swift */,
+				9A99208F263024610021698F /* MapViewController.swift */,
 			);
 			path = "Campus Buddy";
 			sourceTree = "<group>";
@@ -194,7 +200,8 @@
 				9ABE30D42612EC6600D5093E /* Sources */,
 				9ABE30D52612EC6600D5093E /* Frameworks */,
 				9ABE30D62612EC6600D5093E /* Resources */,
-				D85F107421E05E407A1D5A5E /* [CP] Embed Pods Frameworks */,
+				5BE55842BCEC4A6A6E1B1732 /* [CP] Embed Pods Frameworks */,
+				E965EA6A7CAE3131B545CC84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,7 +239,8 @@
 				9ABE30F52612EC6700D5093E /* Sources */,
 				9ABE30F62612EC6700D5093E /* Frameworks */,
 				9ABE30F72612EC6700D5093E /* Resources */,
-				1748084A2D486C195F520A0E /* [CP] Embed Pods Frameworks */,
+				6AEC518BDBBC0D0AB7B9ADC7 /* [CP] Embed Pods Frameworks */,
+				ED430752C11EC87D6652431B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,24 +322,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1748084A2D486C195F520A0E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D85F107421E05E407A1D5A5E /* [CP] Embed Pods Frameworks */ = {
+		5BE55842BCEC4A6A6E1B1732 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -346,6 +337,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AEC518BDBBC0D0AB7B9ADC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD52E13E72F17BB1939EE77E /* [CP] Check Pods Manifest.lock */ = {
@@ -392,6 +400,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E965EA6A7CAE3131B545CC84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED430752C11EC87D6652431B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F6DB9BBBED1C81773CFC9C5D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,10 +467,12 @@
 				9A79ED4C26281F3300E074D5 /* ClassCell.swift in Sources */,
 				297F69582625376400A250B9 /* LoginViewController.swift in Sources */,
 				297F694E2625374200A250B9 /* HomeScreenViewController.swift in Sources */,
+				9A992090263024610021698F /* MapViewController.swift in Sources */,
 				297F69532625375600A250B9 /* SignupViewController.swift in Sources */,
 				9A79ED512628256500E074D5 /* AddClassViewController.swift in Sources */,
 				9ABE30DC2612EC6600D5093E /* AppDelegate.swift in Sources */,
 				9ABE30DE2612EC6600D5093E /* SceneDelegate.swift in Sources */,
+				9A992095263026E60021698F /* GoogleMapsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
