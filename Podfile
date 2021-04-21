@@ -9,6 +9,7 @@ target 'Campus Buddy' do
   pod 'Parse'
   pod 'FSCalendar'
   pod 'AlamofireImage'
+  pod 'GoogleMaps', '4.0.0'
   
 
   target 'Campus BuddyTests' do
