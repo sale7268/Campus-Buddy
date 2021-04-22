@@ -4,6 +4,11 @@ PODS:
     - Alamofire (~> 5.1)
   - Bolts/Tasks (1.9.1)
   - FSCalendar (2.8.2)
+  - GoogleMaps (4.0.0):
+    - GoogleMaps/Maps (= 4.0.0)
+  - GoogleMaps/Base (4.0.0)
+  - GoogleMaps/Maps (4.0.0):
+    - GoogleMaps/Base
   - Parse (1.19.1):
     - Parse/Core (= 1.19.1)
   - Parse/Core (1.19.1):
@@ -12,6 +17,7 @@ PODS:
 DEPENDENCIES:
   - AlamofireImage
   - FSCalendar
+  - GoogleMaps (= 4.0.0)
   - Parse
 
 SPEC REPOS:
@@ -20,6 +26,7 @@ SPEC REPOS:
     - AlamofireImage
     - Bolts
     - FSCalendar
+    - GoogleMaps
     - Parse
 
 SPEC CHECKSUMS:
@@ -27,8 +34,9 @@ SPEC CHECKSUMS:
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  GoogleMaps: b7f7fc569a9b354a3af0d9729dbec40957b7d41e
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
 
-PODFILE CHECKSUM: 5f3a41bb513173872884e10a75fee67155d4f5ae
+PODFILE CHECKSUM: df84f2244081d17d5edb875c80ab29aae30c4074
 
 COCOAPODS: 1.10.1

@@ -32,13 +32,13 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 
 - [x] Log in/sign up using CSUMB credentials. (initiating database using Parse) - Shawn Deppe
 - [ ] Land on Homescreen with navigation items. - Isidro Perez, Bryan Fowles
-- [ ] Be able to access my weekly class schedule (option: google calander api) - Hamza Saleem, Miguel Espitia
+- [x] Be able to access my weekly class schedule (option: google calander api) - Hamza Saleem, Miguel Espitia
 - [ ] Be able to navigate to my class through in-app navigation (google map api) - Denize Patric Ignacio, Hamza Saleem
 - [ ] Be able to manually navigate to the building specified by user (In Mapping Section) - Denize Patric Ignacio, Alexis Caasi
 - [ ] Be able to receieve notifications about alerts/events going on right now - Alexis Caasi
 - [ ] Be able to access campus resources information - Armon Bakhtar
 - [ ] Be able to access upcoming events - Efrain Pamatz
-- [ ] Be able to stay logged in - Roober Gerard Cruz, Carmelo Hernandez
+- [x] Be able to stay logged in - Roober Gerard Cruz, Carmelo Hernandez
 - [ ] Be able to logout of the app - Isidro Perez
 
 **Optional Nice-to-have Stories**
@@ -154,3 +154,8 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 ## Sprint 2
 ### User logs in and stays logged in
 <img src="https://i.imgur.com/0UsBNEJ.gif" width=400>
+
+
+## Sprint 3
+### User can view a calendar on top half of screen, also register and view classes on bottom half of screen
+<img src="https://s3.gifyu.com/images/sprint3.gif" width=400>
