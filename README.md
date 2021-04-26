@@ -155,7 +155,8 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 ### User logs in and stays logged in
 <img src="https://i.imgur.com/0UsBNEJ.gif" width=400>
 
-
-## Sprint 3
 ### User can view a calendar on top half of screen, also register and view classes on bottom half of screen
 <img src="https://s3.gifyu.com/images/sprint3.gif" width=400>
+
+## Sprint 3
+
