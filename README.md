@@ -36,7 +36,7 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 - [ ] Be able to navigate to my class through in-app navigation (google map api) - Denize Patric Ignacio, Hamza Saleem
 - [ ] Be able to manually navigate to the building specified by user (In Mapping Section) - Denize Patric Ignacio, Alexis Caasi
 - [ ] Be able to receieve notifications about alerts/events going on right now - Alexis Caasi
-- [ ] Be able to access campus resources information - Armon Bakhtar
+- [x] Be able to access campus resources information - Armon Bakhtar
 - [ ] Be able to access upcoming events - Efrain Pamatz
 - [x] Be able to stay logged in - Roober Gerard Cruz, Carmelo Hernandez
 - [ ] Be able to logout of the app - Isidro Perez
