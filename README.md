@@ -159,4 +159,5 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 <img src="https://s3.gifyu.com/images/sprint3.gif" width=400>
 
 ## Sprint 3
+<img src="http://g.recordit.co/UEWnXZNetp.gif" width=400>
 
