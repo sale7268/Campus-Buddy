@@ -11,11 +11,13 @@
 		297F69532625375600A250B9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F69522625375600A250B9 /* SignupViewController.swift */; };
 		297F69582625376400A250B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F69572625376400A250B9 /* LoginViewController.swift */; };
 		5975F22DD0736F7CE4A8AE21 /* Pods_Campus_Buddy_Campus_BuddyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEFEB1D8EC924B31DFD33F2 /* Pods_Campus_Buddy_Campus_BuddyUITests.framework */; };
+		7A08730C263640BF00B6DB21 /* CampusResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08730B263640BF00B6DB21 /* CampusResourcesViewController.swift */; };
+		7A0873112636439F00B6DB21 /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0873102636439F00B6DB21 /* NSAttributedStringExtension.swift */; };
 		99CB8C02048B02C36AE12936 /* Pods_Campus_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC1BC91A14929E7CE3932BA /* Pods_Campus_Buddy.framework */; };
 		9A79ED4C26281F3300E074D5 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79ED4B26281F3300E074D5 /* ClassCell.swift */; };
 		9A79ED512628256500E074D5 /* AddClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79ED502628256500E074D5 /* AddClassViewController.swift */; };
+		9A967708263635A200AA8439 /* GoogleMapsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A967707263635A200AA8439 /* GoogleMapsHelper.swift */; };
 		9A992090263024610021698F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A99208F263024610021698F /* MapViewController.swift */; };
-		9A992095263026E60021698F /* GoogleMapsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A992094263026E60021698F /* GoogleMapsHelper.swift */; };
 		9ABE30DC2612EC6600D5093E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE30DB2612EC6600D5093E /* AppDelegate.swift */; };
 		9ABE30DE2612EC6600D5093E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE30DD2612EC6600D5093E /* SceneDelegate.swift */; };
 		9ABE30E32612EC6600D5093E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ABE30E12612EC6600D5093E /* Main.storyboard */; };
@@ -52,10 +54,12 @@
 		335234D6991A90864309927A /* Pods-Campus Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus Buddy.debug.xcconfig"; path = "Target Support Files/Pods-Campus Buddy/Pods-Campus Buddy.debug.xcconfig"; sourceTree = "<group>"; };
 		41AAED3E838675F3C8EF9493 /* Pods-Campus Buddy-Campus BuddyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus Buddy-Campus BuddyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Campus Buddy-Campus BuddyUITests/Pods-Campus Buddy-Campus BuddyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		793B264F4E3C2BEB1FFA75C9 /* Pods-Campus BuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Campus BuddyTests.release.xcconfig"; path = "Target Support Files/Pods-Campus BuddyTests/Pods-Campus BuddyTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A08730B263640BF00B6DB21 /* CampusResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusResourcesViewController.swift; sourceTree = "<group>"; };
+		7A0873102636439F00B6DB21 /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		9A79ED4B26281F3300E074D5 /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		9A79ED502628256500E074D5 /* AddClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassViewController.swift; sourceTree = "<group>"; };
+		9A967707263635A200AA8439 /* GoogleMapsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsHelper.swift; sourceTree = "<group>"; };
 		9A99208F263024610021698F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		9A992094263026E60021698F /* GoogleMapsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleMapsHelper.swift; path = ../../../../Downloads/Resources/GoogleMapsHelper.swift; sourceTree = "<group>"; };
 		9ABE30D82612EC6600D5093E /* Campus Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Campus Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABE30DB2612EC6600D5093E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ABE30DD2612EC6600D5093E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,12 +155,14 @@
 				9ABE30E62612EC6700D5093E /* LaunchScreen.storyboard */,
 				9ABE30E92612EC6700D5093E /* Info.plist */,
 				297F69522625375600A250B9 /* SignupViewController.swift */,
-				9A992094263026E60021698F /* GoogleMapsHelper.swift */,
 				297F69572625376400A250B9 /* LoginViewController.swift */,
 				A6A9791626267785004E12D7 /* CalendarViewController.swift */,
 				9A79ED4B26281F3300E074D5 /* ClassCell.swift */,
 				9A79ED502628256500E074D5 /* AddClassViewController.swift */,
 				9A99208F263024610021698F /* MapViewController.swift */,
+				9A967707263635A200AA8439 /* GoogleMapsHelper.swift */,
+				7A08730B263640BF00B6DB21 /* CampusResourcesViewController.swift */,
+				7A0873102636439F00B6DB21 /* NSAttributedStringExtension.swift */,
 			);
 			path = "Campus Buddy";
 			sourceTree = "<group>";
@@ -466,13 +472,15 @@
 				A6A9791726267785004E12D7 /* CalendarViewController.swift in Sources */,
 				9A79ED4C26281F3300E074D5 /* ClassCell.swift in Sources */,
 				297F69582625376400A250B9 /* LoginViewController.swift in Sources */,
+				7A0873112636439F00B6DB21 /* NSAttributedStringExtension.swift in Sources */,
 				297F694E2625374200A250B9 /* HomeScreenViewController.swift in Sources */,
+				9A967708263635A200AA8439 /* GoogleMapsHelper.swift in Sources */,
 				9A992090263024610021698F /* MapViewController.swift in Sources */,
+				7A08730C263640BF00B6DB21 /* CampusResourcesViewController.swift in Sources */,
 				297F69532625375600A250B9 /* SignupViewController.swift in Sources */,
 				9A79ED512628256500E074D5 /* AddClassViewController.swift in Sources */,
 				9ABE30DC2612EC6600D5093E /* AppDelegate.swift in Sources */,
 				9ABE30DE2612EC6600D5093E /* SceneDelegate.swift in Sources */,
-				9A992095263026E60021698F /* GoogleMapsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
