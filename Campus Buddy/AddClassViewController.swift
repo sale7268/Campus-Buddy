@@ -17,6 +17,7 @@ class AddClassViewController: UIViewController {
     @IBOutlet weak var dateMontField: UITextField!
     @IBOutlet weak var dateDayField: UITextField!
     @IBOutlet weak var dateYearField: UITextField!
+    @IBOutlet weak var weekdayField: UITextField!
     
     @IBAction func submitButton(_ sender: Any) {
         let classes = PFObject(className: "Classes")
@@ -26,6 +27,7 @@ class AddClassViewController: UIViewController {
         classes["classTimeMinute"] = timeMinuteField.text!
         classes["author"] = PFUser.current()!
         classes["class_name"] = classNameField.text!
+        classes["weekday"] = weekdayField.text!
         
         let month = dateMontField.text!
         let day = dateDayField.text!
