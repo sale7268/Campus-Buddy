@@ -11,6 +11,8 @@ import FSCalendar
 import AlamofireImage
 import Parse
 
+var weekday = 0
+
 class CalendarViewController: UIViewController, UITableViewDataSource,UITableViewDelegate, FSCalendarDelegate{
     
     @IBOutlet var calendar: FSCalendar!
@@ -50,7 +52,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
         
         let query = PFQuery(className: "Classes")
         query.whereKey("author", equalTo: currentUser)
-        query.includeKeys(["class_name", "classDate", "buildingName", "classTimeHour", "classTimeMinute"])
+        query.includeKeys(["class_name", "classDate", "buildingName", "classTimeHour", "classTimeMinute", "weekday"])
         query.limit = 20
         
         query.findObjectsInBackground { (classes, error) in
@@ -79,6 +81,9 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
         formatter.dateFormat = "EEEE MM-dd-YYYY at h:mm a"
         let string = formatter.string(from: date)
         print ("\(string)")
+        
+        weekday = Calendar.current.component(.weekday, from: date)
+        print(weekday)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -90,19 +95,92 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
 //    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let classSchedule = classes[indexPath.row]
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClassCell") as! ClassCell
+        var currentWeekday = classSchedule["weekday"] as! String
         
-        cell.classLabel.text = classSchedule["class_name"] as! String
-        cell.buildingLabel.text = classSchedule["buildingName"] as! String
-        let timeH = classSchedule["classTimeHour"] as! String
-        let timeM = classSchedule["classTimeMinute"] as! String
-        cell.timeLabel.text = timeH + ":" + timeM as String
+        if(weekday == 1){
+            if(currentWeekday == "Sunday"){
+                cell.classLabel.text = classSchedule["class_name"] as! String
+                cell.buildingLabel.text = classSchedule["buildingName"] as! String
+                let timeH = classSchedule["classTimeHour"] as! String
+                let timeM = classSchedule["classTimeMinute"] as! String
+                cell.timeLabel.text = timeH + ":" + timeM as String
+                currentWeekday = classSchedule["weekday"] as! String
+            }else{
+                return UITableViewCell()
+            }
+        }else if(weekday == 2){
+            if(currentWeekday == "Monday"){
+                cell.classLabel.text = classSchedule["class_name"] as! String
+                cell.buildingLabel.text = classSchedule["buildingName"] as! String
+                let timeH = classSchedule["classTimeHour"] as! String
+                let timeM = classSchedule["classTimeMinute"] as! String
+                cell.timeLabel.text = timeH + ":" + timeM as String
+                currentWeekday = classSchedule["weekday"] as! String
+            }else{
+                return UITableViewCell()
+            }
+        }else if(weekday == 3){
+            if(currentWeekday == "Tuesday"){
+                cell.classLabel.text = classSchedule["class_name"] as! String
+                cell.buildingLabel.text = classSchedule["buildingName"] as! String
+                let timeH = classSchedule["classTimeHour"] as! String
+                let timeM = classSchedule["classTimeMinute"] as! String
+                cell.timeLabel.text = timeH + ":" + timeM as String
+                currentWeekday = classSchedule["weekday"] as! String
+            }else{
+                return UITableViewCell()
+            }
+        }else if(weekday == 4){
+            if(currentWeekday == "Wednesday"){
+                cell.classLabel.text = classSchedule["class_name"] as! String
+                cell.buildingLabel.text = classSchedule["buildingName"] as! String
+                let timeH = classSchedule["classTimeHour"] as! String
+                let timeM = classSchedule["classTimeMinute"] as! String
+                cell.timeLabel.text = timeH + ":" + timeM as String
+                currentWeekday = classSchedule["weekday"] as! String
+            }else{
+                return UITableViewCell()
+            }
+        }else if(weekday == 5){
+            if(currentWeekday == "Thursday"){
+                cell.classLabel.text = classSchedule["class_name"] as! String
+                cell.buildingLabel.text = classSchedule["buildingName"] as! String
+                let timeH = classSchedule["classTimeHour"] as! String
+                let timeM = classSchedule["classTimeMinute"] as! String
+                cell.timeLabel.text = timeH + ":" + timeM as String
+                currentWeekday = classSchedule["weekday"] as! String
+            }else{
+                return UITableViewCell()
+            }
+        }else if(weekday == 6){
+            if(currentWeekday == "Friday"){
+                cell.classLabel.text = classSchedule["class_name"] as! String
+                cell.buildingLabel.text = classSchedule["buildingName"] as! String
+                let timeH = classSchedule["classTimeHour"] as! String
+                let timeM = classSchedule["classTimeMinute"] as! String
+                cell.timeLabel.text = timeH + ":" + timeM as String
+                currentWeekday = classSchedule["weekday"] as! String
+            }else{
+                return UITableViewCell()
+            }
+        }else if(weekday == 7){
+            if(currentWeekday == "Saturday"){
+                cell.classLabel.text = classSchedule["class_name"] as! String
+                cell.buildingLabel.text = classSchedule["buildingName"] as! String
+                let timeH = classSchedule["classTimeHour"] as! String
+                let timeM = classSchedule["classTimeMinute"] as! String
+                cell.timeLabel.text = timeH + ":" + timeM as String
+                currentWeekday = classSchedule["weekday"] as! String
+            }else{
+                return UITableViewCell()
+            }
+        }else{
+            tableView.reloadData()
+        }
         
-        
-        return cell
+        return cell;
     }
     
 
