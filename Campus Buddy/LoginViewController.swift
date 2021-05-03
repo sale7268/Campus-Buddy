@@ -17,11 +17,11 @@ class LoginViewController: UIViewController{
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
-            self.performSegue(withIdentifier: "loginSegue", sender: nil)
-        }
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+//            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+//        }
+//    }
     
     @IBAction func onLogin(_ sender: Any) {
         let username = usernameField.text!
