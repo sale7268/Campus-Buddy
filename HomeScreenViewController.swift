@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class HomeScreenViewController: UIViewController {
 
@@ -15,7 +16,12 @@ class HomeScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOut()
+        
+        self.performSegue(withIdentifier: "logoutSegue" , sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
