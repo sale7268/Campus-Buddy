@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mrR-on-EZK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,7 +33,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassCell" rowHeight="124" id="u13-hN-rye" customClass="ClassCell" customModule="Campus_Buddy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="124"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u13-hN-rye" id="Qrs-jv-H0p">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
@@ -108,7 +108,112 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cn-Dv-f1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1970" y="3003"/>
+            <point key="canvasLocation" x="-2188" y="2788"/>
+        </scene>
+        <!--Buildings-->
+        <scene sceneID="cSa-Fu-Jmq">
+            <objects>
+                <viewController id="vey-6c-keF" customClass="SchoolLocationsViewController" customModule="Campus_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5cS-gV-E94">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOW-uc-f70">
+                                <rect key="frame" x="85" y="297" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Harbor Hall"/>
+                                <connections>
+                                    <action selector="openHarborHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="vWf-pX-4gg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smf-g4-aDg">
+                                <rect key="frame" x="92" y="373" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sand Hall"/>
+                                <connections>
+                                    <action selector="openSandHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="Eig-tt-SxR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZt-31-h0T">
+                                <rect key="frame" x="83" y="446" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BIT Building"/>
+                                <connections>
+                                    <action selector="openBITBuildingMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="98K-LW-jnY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-qk-V62">
+                                <rect key="frame" x="84" y="509" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Field House"/>
+                                <connections>
+                                    <action selector="openFieldHouseMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="q5o-2U-AdQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXU-xX-GuO">
+                                <rect key="frame" x="85" y="569" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Field Office"/>
+                                <connections>
+                                    <action selector="openFieldOfficeMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="Ki8-TQ-Bop"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU3-qq-Ak9">
+                                <rect key="frame" x="254" y="569" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Heron Hall"/>
+                                <connections>
+                                    <action selector="openHeronHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="m2B-Jg-lhc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj7-Il-hZO">
+                                <rect key="frame" x="255" y="509" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Grove Hall"/>
+                                <connections>
+                                    <action selector="openGroveHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="raf-YH-5OD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bg-mQ-jvm">
+                                <rect key="frame" x="254" y="445" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Green Hall"/>
+                                <connections>
+                                    <action selector="openGreenHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="4CB-OB-Vd5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Po-aN-T0f">
+                                <rect key="frame" x="253" y="297" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dunes Hall"/>
+                                <connections>
+                                    <action selector="openDunesHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="w7H-G4-7zs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgx-s6-bh5">
+                                <rect key="frame" x="248" y="373" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gavillan Hall"/>
+                                <connections>
+                                    <action selector="openGavilanHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="tQI-dQ-5qu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to CSUMB!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl0-jf-Zza">
+                                <rect key="frame" x="98" y="183" width="218" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1H8-sf-KKX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Buildings" image="building.columns" catalog="system" id="A7u-R2-39l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6g-kA-EgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="2002"/>
         </scene>
         <!--Add Class View Controller-->
         <scene sceneID="GEo-WB-1Ae">
@@ -119,13 +224,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-Bk-uwv">
-                                <rect key="frame" x="87" y="241" width="241" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Building Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ual-Sj-9ka">
-                                <rect key="frame" x="87" y="309" width="241" height="34"/>
+                                <rect key="frame" x="87" y="235" width="241" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -173,6 +272,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weekday(e.g. Monday)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4p-so-gK5">
+                                <rect key="frame" x="87" y="277" width="241" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Building Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ual-Sj-9ka">
+                                <rect key="frame" x="87" y="319" width="241" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pyW-Sv-nLe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -186,11 +297,12 @@
                         <outlet property="dateYearField" destination="GVu-GK-gue" id="e7c-6S-WN2"/>
                         <outlet property="timeHourField" destination="hk8-LV-Edi" id="hQr-gk-RIN"/>
                         <outlet property="timeMinuteField" destination="58j-m1-g2D" id="ykv-Eb-KkS"/>
+                        <outlet property="weekdayField" destination="g4p-so-gK5" id="Ht3-N8-QWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31y-cN-7rq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1180" y="3003"/>
+            <point key="canvasLocation" x="-1494" y="2788"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="8Cw-02-0OL">
@@ -206,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8c-jk-YMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-117" y="3003"/>
+            <point key="canvasLocation" x="-439" y="3803"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="ARb-YN-Jzm">
@@ -223,6 +335,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SL-xT-yAp">
+                                <rect key="frame" x="184" y="526" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qc9-6j-Zr3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -231,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ce-Lh-eQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-484" y="1558"/>
+            <point key="canvasLocation" x="-565" y="2788"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="kxJ-4z-DKq">
@@ -311,12 +428,12 @@
                         <outlet property="lastNameField" destination="X5b-SR-KUJ" id="wDN-xe-zWe"/>
                         <outlet property="passwordField" destination="RdQ-8G-DsL" id="MvN-BT-TfU"/>
                         <outlet property="usernameField" destination="ciY-LH-5Dp" id="QPZ-Td-sES"/>
-                        <segue destination="voS-nU-AJH" kind="presentation" identifier="registerLoginSegue" id="uWF-Pp-di5"/>
+                        <segue destination="ckP-GX-V47" kind="presentation" identifier="registerLoginSegue" id="uWF-Pp-di5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iRV-ox-hhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="1558"/>
+            <point key="canvasLocation" x="-1094" y="449"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -383,17 +500,18 @@
                     <connections>
                         <outlet property="passwordField" destination="Bmu-fJ-kcC" id="E9l-xa-0qL"/>
                         <outlet property="usernameField" destination="KbB-iu-RMJ" id="DL2-vR-ziT"/>
-                        <segue destination="voS-nU-AJH" kind="presentation" identifier="loginSegue" id="0K9-Ir-2I7"/>
+                        <segue destination="ckP-GX-V47" kind="presentation" identifier="loginSegue" id="0K9-Ir-2I7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="94"/>
+            <point key="canvasLocation" x="-565" y="-329"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="fTo-Bv-DXu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="voS-nU-AJH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="MXr-VR-2rD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MB6-Wu-wIU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -406,7 +524,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytG-tS-paW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-484" y="817"/>
+            <point key="canvasLocation" x="-565" y="2002"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vUA-fb-Rzw">
@@ -424,12 +542,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivf-uG-tPk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="817"/>
+            <point key="canvasLocation" x="-30" y="449"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Calendar-->
         <scene sceneID="poF-kf-s0a">
             <objects>
                 <navigationController modalPresentationStyle="fullScreen" id="cmT-4r-cv4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="hut-fj-WIA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1te-li-Pil">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -440,29 +559,417 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aQ-6u-Vxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1383" y="2273"/>
+            <point key="canvasLocation" x="-1738" y="2002"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Maps-->
         <scene sceneID="kbi-06-afY">
             <objects>
                 <navigationController modalPresentationStyle="fullScreen" id="mrR-on-EZK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Maps" image="map" catalog="system" id="ffm-0N-yix"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ai6-Zj-7gf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="IbD-CM-W3o" kind="relationship" relationship="rootViewController" id="mik-uR-FhW"/>
+                        <segue destination="vey-6c-keF" kind="relationship" relationship="rootViewController" id="z4D-uy-YfJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgF-Zz-Ihf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-438" y="2273"/>
+            <point key="canvasLocation" x="593" y="2002"/>
+        </scene>
+        <!--Campus Resources View Controller-->
+        <scene sceneID="8tS-oy-ITo">
+            <objects>
+                <viewController id="ie9-tm-vNl" customClass="CampusResourcesViewController" customModule="Campus_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CmQ-5X-mLb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wME-2i-OGt">
+                                <rect key="frame" x="4" y="44" width="410" height="1956"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmI-LC-WWD">
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="2000"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Academic advising on the CSUMB and GE requirements, course planning, two-year plan workshops." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P59-yB-yaG">
+                                                <rect key="frame" x="8" y="123" width="374" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Academic Advising" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="36z-9g-iqh">
+                                                <rect key="frame" x="8" y="86" width="209" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Campus Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf3-cG-2Yd">
+                                                <rect key="frame" x="70" y="8" width="271" height="93"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Basic Needs" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t3e-kO-97v">
+                                                <rect key="frame" x="8" y="174" width="209" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Raj-fd-8em">
+                                                <rect key="frame" x="8" y="212" width="374" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Basic Needs refers to the food, housing and overall wellness security of our community.
+
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Behavioral Intervention Team (BIT)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I84-wJ-gyj">
+                                                <rect key="frame" x="8" y="267" width="347" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z4l-fe-ShU">
+                                                <rect key="frame" x="8" y="309" width="374" height="116.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">The Behavioral Intervention Team (BIT) serves as the centralized campus team for discussion and coordinated action regarding reports of disruptive, problematic or concerning behavior or misconduct from co-workers, students, community members, friends, colleagues, etc</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Campus Health Center" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t6B-1i-CTV">
+                                                <rect key="frame" x="8" y="433" width="240" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Urgent, primary, and ancillary health care; referrals to other health services" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k1r-kI-CvV">
+                                                <rect key="frame" x="8" y="467" width="374" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Campus Service Center" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wtM-qh-8mh">
+                                                <rect key="frame" x="8" y="521" width="240" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TSV-es-r7R">
+                                                <rect key="frame" x="8" y="556" width="374" height="83"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Student cashiering, registration financial aid, Otter Cards and pay warrant distribution.
+
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Care Team" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4F5-Rw-RsV">
+                                                <rect key="frame" x="8" y="602" width="240" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NBV-5H-ZU0">
+                                                <rect key="frame" x="8" y="637" width="374" height="133"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">The Care Team identifies students who may be experiencing distress or have concerns within the university community that could potentially impact student well-being. The team consults in order to generate awareness and plan collaborative responses.
+
+</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Career Development Office" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cVj-Fh-MWb">
+                                                <rect key="frame" x="8" y="737" width="276" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c3W-Qy-xMR">
+                                                <rect key="frame" x="8" y="778" width="374" height="82"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Major &amp; career exploration, job &amp; internship search, resume writing, interview preparation, professional networking and preparation for graduate school.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="College Assistance Migrant Program" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hc8-1b-uBF">
+                                                <rect key="frame" x="8" y="844" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ClI-cH-xkA">
+                                                <rect key="frame" x="9" y="886" width="374" height="82"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">CAMP assists first-year students from migrant and farm worker backgrounds with academic advising, personal counselling, financial assistance and health services.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Cooperative Learning Center" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PbA-KS-h4S">
+                                                <rect key="frame" x="9" y="955" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Free tutoring for language, math, science, technology, writing and ESL support." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HUg-bx-o2q">
+                                                <rect key="frame" x="10" y="994" width="374" height="67"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Educational Opportunity Program" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ig7-vQ-u7F">
+                                                <rect key="frame" x="8" y="1041" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Peer mentoring, academic advising, academic and personal development skills workshops and a student lab." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8kZ-tt-iUf">
+                                                <rect key="frame" x="8" y="1083" width="374" height="67"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Financial Aid" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EYh-Wb-3Na">
+                                                <rect key="frame" x="8" y="1150" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Financial aid counseling, applying for financial aid and determining financial aid eligibility." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W55-ZP-SVe">
+                                                <rect key="frame" x="8" y="1189" width="374" height="67"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Health &amp; Wellness Services" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mtq-kz-JcM">
+                                                <rect key="frame" x="8" y="1238" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a99-TA-lUw">
+                                                <rect key="frame" x="7" y="1279" width="374" height="83"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Health &amp; Wellness Services at CSUMB strives to assist members of the CSUMB community in achieving and maintaining physical, mental, emotional, and spiritual wellness.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Office of the Registrar" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-pb-aAb">
+                                                <rect key="frame" x="10" y="1362" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5om-Fb-xjf">
+                                                <rect key="frame" x="9" y="1401" width="374" height="83"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Class enrollment, student record keeping, grading procedures, academic standing, official transcript ordering, transfer credit for continuing students, and graduation.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Student Disability Resources" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K4o-oX-6dB">
+                                                <rect key="frame" x="10" y="1492" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Academic and personal support services for students with learning, psychological and/or physical disabilities." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lJl-8N-JUS">
+                                                <rect key="frame" x="10" y="1535" width="372" height="49.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Transfer Student Success Center" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xtp-ty-oag">
+                                                <rect key="frame" x="10" y="1592" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lOI-u0-fFP">
+                                                <rect key="frame" x="10" y="1634" width="372" height="116.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">The Transfer Student Success Center provides services to assist students with navigating the academic and cultural landscape of CSUMB. In collaboration with campus partners, the program connects students with success services to aid them in their academic, professional, and personal endeavors</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="University Police" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YFU-WI-UuD">
+                                                <rect key="frame" x="7" y="1750" width="361" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-OH-4FQ">
+                                                <rect key="frame" x="8" y="1792" width="372" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Whether you are a visitor, a student, a member of the University staff, or a resident on the CSUMB campus, the officers and staff of the University Police Department are committed to ensuring your stay will be both safe and enjoyable.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="2000" id="6mW-fD-YZU"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2000" id="MoK-q1-exK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fmI-LC-WWD" firstAttribute="trailing" secondItem="wME-2i-OGt" secondAttribute="trailing" id="72m-T8-Hi9"/>
+                                    <constraint firstItem="fmI-LC-WWD" firstAttribute="bottom" secondItem="wME-2i-OGt" secondAttribute="bottom" id="D7V-Ce-k9p"/>
+                                    <constraint firstItem="fmI-LC-WWD" firstAttribute="top" secondItem="wME-2i-OGt" secondAttribute="top" id="Xfb-Ga-ihR"/>
+                                    <constraint firstItem="fmI-LC-WWD" firstAttribute="leading" secondItem="wME-2i-OGt" secondAttribute="leading" id="xNV-OW-UWm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TWq-aW-hzb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fmI-LC-WWD" firstAttribute="width" secondItem="CmQ-5X-mLb" secondAttribute="width" multiplier="0.990338" id="WXi-6i-sjd"/>
+                            <constraint firstItem="wME-2i-OGt" firstAttribute="leading" secondItem="TWq-aW-hzb" secondAttribute="leading" constant="4" id="ctC-XT-gsv"/>
+                            <constraint firstItem="wME-2i-OGt" firstAttribute="trailing" secondItem="TWq-aW-hzb" secondAttribute="trailing" id="k5B-h2-85x"/>
+                            <constraint firstAttribute="bottom" secondItem="wME-2i-OGt" secondAttribute="bottom" id="sWH-fb-fWu"/>
+                            <constraint firstItem="wME-2i-OGt" firstAttribute="top" secondItem="TWq-aW-hzb" secondAttribute="top" id="snv-ho-f8s"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="academic" destination="36z-9g-iqh" id="kwP-hk-Un2"/>
+                        <outlet property="basicNeeds" destination="t3e-kO-97v" id="Wab-JF-hba"/>
+                        <outlet property="behavioral" destination="I84-wJ-gyj" id="XfD-a4-BXt"/>
+                        <outlet property="campusHealth" destination="t6B-1i-CTV" id="V4g-XT-u5y"/>
+                        <outlet property="campusService" destination="wtM-qh-8mh" id="IkW-fp-IJY"/>
+                        <outlet property="careTeam" destination="4F5-Rw-RsV" id="olM-0v-e8Z"/>
+                        <outlet property="careerDevelop" destination="cVj-Fh-MWb" id="2eS-H2-kyQ"/>
+                        <outlet property="collegeAssist" destination="hc8-1b-uBF" id="3ID-np-Gtr"/>
+                        <outlet property="cooperativeLearn" destination="PbA-KS-h4S" id="xPA-TS-rDd"/>
+                        <outlet property="educationalOpportunity" destination="Ig7-vQ-u7F" id="h71-3H-0N5"/>
+                        <outlet property="financialAid" destination="EYh-Wb-3Na" id="fSA-jh-hFH"/>
+                        <outlet property="healthAndWellness" destination="mtq-kz-JcM" id="Vt3-mA-dah"/>
+                        <outlet property="registrarOffice" destination="hV3-pb-aAb" id="rc9-gh-quj"/>
+                        <outlet property="studentDisability" destination="K4o-oX-6dB" id="fFj-db-9jL"/>
+                        <outlet property="transferSuccess" destination="Xtp-ty-oag" id="Mxz-aH-aAE"/>
+                        <outlet property="universityPolice" destination="YFU-WI-UuD" id="huT-8g-E1f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMC-RS-91d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="3862"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xQW-yX-gbQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ckP-GX-V47" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mnf-hV-TsW">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="voS-nU-AJH" kind="relationship" relationship="viewControllers" id="Xqy-0g-iUr"/>
+                        <segue destination="mrR-on-EZK" kind="relationship" relationship="viewControllers" id="0g6-9d-fwh"/>
+                        <segue destination="cmT-4r-cv4" kind="relationship" relationship="viewControllers" id="zb9-HU-Ed6"/>
+                        <segue destination="vey-6c-keF" kind="relationship" relationship="viewControllers" id="Fvb-wR-6iB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YnA-EQ-igG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="1279"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uWF-Pp-di5"/>
+        <segue reference="0K9-Ir-2I7"/>
+        <segue reference="zb9-HU-Ed6"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="building.columns" catalog="system" width="128" height="113"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
