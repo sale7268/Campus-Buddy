@@ -162,5 +162,5 @@ Campus buddy is a navigation app to navigate you through the campus and helps yo
 <img src="http://g.recordit.co/UEWnXZNetp.gif" width=400>
 
 ## Sprint 4
-<img src="https://files.slack.com/files-tmb/T6LG86XDE-F020CC6BRKR-4fc5cbf38f/tabviewcontroller_360.gif" width=400>
+<img src="http://g.recordit.co/k0q7r9Ehu7.gif" width=400>
 
