@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6g-kA-EgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1664" y="2002"/>
+            <point key="canvasLocation" x="501" y="2048"/>
         </scene>
         <!--Add Class View Controller-->
         <scene sceneID="GEo-WB-1Ae">
@@ -302,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31y-cN-7rq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1494" y="2788"/>
+            <point key="canvasLocation" x="-2657" y="2835"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="8Cw-02-0OL">
@@ -318,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8c-jk-YMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-439" y="3803"/>
+            <point key="canvasLocation" x="-570" y="2835"/>
         </scene>
         <!--Home Screen View Controller-->
         <scene sceneID="ARb-YN-Jzm">
@@ -348,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ce-Lh-eQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-565" y="2788"/>
+            <point key="canvasLocation" x="-1728" y="2835"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="kxJ-4z-DKq">
@@ -524,7 +524,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytG-tS-paW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-565" y="2002"/>
+            <point key="canvasLocation" x="-1728" y="2048"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vUA-fb-Rzw">
@@ -559,7 +559,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aQ-6u-Vxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1738" y="2002"/>
+            <point key="canvasLocation" x="-2901" y="2048"/>
         </scene>
         <!--Maps-->
         <scene sceneID="kbi-06-afY">
@@ -571,14 +571,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vey-6c-keF" kind="relationship" relationship="rootViewController" id="z4D-uy-YfJ"/>
+                        <segue destination="IbD-CM-W3o" kind="relationship" relationship="rootViewController" id="a3c-O6-hhT"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgF-Zz-Ihf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="2002"/>
+            <point key="canvasLocation" x="-570" y="2048"/>
         </scene>
-        <!--Campus Resources View Controller-->
+        <!--Resources-->
         <scene sceneID="8tS-oy-ITo">
             <objects>
                 <viewController id="ie9-tm-vNl" customClass="CampusResourcesViewController" customModule="Campus_Buddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -913,6 +913,7 @@
                             <constraint firstItem="wME-2i-OGt" firstAttribute="top" secondItem="TWq-aW-hzb" secondAttribute="top" id="snv-ho-f8s"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Resources" image="books.vertical.fill" catalog="system" id="Ipf-Kl-Aed"/>
                     <size key="freeformSize" width="414" height="2000"/>
                     <connections>
                         <outlet property="academic" destination="36z-9g-iqh" id="kwP-hk-Un2"/>
@@ -935,7 +936,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lMC-RS-91d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="3862"/>
+            <point key="canvasLocation" x="1604" y="2417"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xQW-yX-gbQ">
@@ -943,6 +944,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ckP-GX-V47" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mnf-hV-TsW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -951,6 +953,7 @@
                         <segue destination="mrR-on-EZK" kind="relationship" relationship="viewControllers" id="0g6-9d-fwh"/>
                         <segue destination="cmT-4r-cv4" kind="relationship" relationship="viewControllers" id="zb9-HU-Ed6"/>
                         <segue destination="vey-6c-keF" kind="relationship" relationship="viewControllers" id="Fvb-wR-6iB"/>
+                        <segue destination="ie9-tm-vNl" kind="relationship" relationship="viewControllers" id="n6c-B7-VNP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YnA-EQ-igG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -963,6 +966,7 @@
         <segue reference="zb9-HU-Ed6"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
         <image name="building.columns" catalog="system" width="128" height="113"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
