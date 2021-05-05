@@ -30,7 +30,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
         //Initiating a button with plus as background image
         let image = UIImage(named: "plus.png")
         let button = UIButton(type: UIButton.ButtonType.custom)
-        button.frame = CGRect(origin: CGPoint(x: self.view.frame.width / 2 - 25, y: self.view.frame.size.height - 80), size: CGSize(width: 50, height: 50))
+        button.frame = CGRect(origin: CGPoint(x: self.view.frame.width / 2 - 25, y: self.view.frame.size.height - 150), size: CGSize(width: 50, height: 50))
         button.setImage(image, for: .normal)
         button.addTarget(self, action: #selector(clicked), for: .touchUpInside)
 
@@ -104,6 +104,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
         var currentWeekday = classSchedule["weekday"] as! String
         
         print(classes.count)
+        print(tableView.visibleCells.count)
         
         if(weekday == 1){
             if(currentWeekday == "Sunday"){
