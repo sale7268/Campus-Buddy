@@ -45,6 +45,10 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
         calendar.appearance.todaySelectionColor = UIColor.black
 
         // Do any additional setup after loading the view.
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControl.Event.valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -98,6 +102,8 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
         let classSchedule = classes[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClassCell") as! ClassCell
         var currentWeekday = classSchedule["weekday"] as! String
+        
+        print(classes.count)
         
         if(weekday == 1){
             if(currentWeekday == "Sunday"){
@@ -177,12 +183,20 @@ class CalendarViewController: UIViewController, UITableViewDataSource,UITableVie
                 return UITableViewCell()
             }
         }else{
-            tableView.reloadData()
+            cell.classLabel.text = classSchedule["class_name"] as! String
+            cell.buildingLabel.text = classSchedule["buildingName"] as! String
+            let timeH = classSchedule["classTimeHour"] as! String
+            let timeM = classSchedule["classTimeMinute"] as! String
+            cell.timeLabel.text = timeH + ":" + timeM as String
         }
         
         return cell;
     }
     
+    @objc func refreshControlAction(_ refreshControl: UIRefreshControl) {
+        tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
 
     /*
     // MARK: - Navigation
