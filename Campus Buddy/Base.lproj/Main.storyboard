@@ -119,92 +119,99 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOW-uc-f70">
-                                <rect key="frame" x="85" y="297" width="78" height="30"/>
+                                <rect key="frame" x="58" y="345" width="96" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Harbor Hall"/>
                                 <connections>
                                     <action selector="openHarborHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="vWf-pX-4gg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smf-g4-aDg">
-                                <rect key="frame" x="92" y="373" width="65" height="30"/>
+                                <rect key="frame" x="58" y="421" width="80" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Sand Hall"/>
                                 <connections>
                                     <action selector="openSandHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="Eig-tt-SxR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZt-31-h0T">
-                                <rect key="frame" x="83" y="446" width="82" height="30"/>
+                                <rect key="frame" x="58" y="493" width="101" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="BIT Building"/>
                                 <connections>
                                     <action selector="openBITBuildingMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="98K-LW-jnY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-qk-V62">
-                                <rect key="frame" x="84" y="509" width="81" height="30"/>
+                                <rect key="frame" x="57" y="576" width="99" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Field House"/>
                                 <connections>
                                     <action selector="openFieldHouseMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="q5o-2U-AdQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXU-xX-GuO">
-                                <rect key="frame" x="85" y="569" width="79" height="30"/>
+                                <rect key="frame" x="58" y="662" width="96" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Field Office"/>
                                 <connections>
                                     <action selector="openFieldOfficeMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="Ki8-TQ-Bop"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU3-qq-Ak9">
-                                <rect key="frame" x="254" y="569" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Heron Hall"/>
-                                <connections>
-                                    <action selector="openHeronHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="m2B-Jg-lhc"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj7-Il-hZO">
-                                <rect key="frame" x="255" y="509" width="71" height="30"/>
+                                <rect key="frame" x="250" y="576" width="87" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Grove Hall"/>
                                 <connections>
                                     <action selector="openGroveHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="raf-YH-5OD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bg-mQ-jvm">
-                                <rect key="frame" x="254" y="445" width="72" height="30"/>
+                                <rect key="frame" x="249" y="493" width="88" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Green Hall"/>
                                 <connections>
                                     <action selector="openGreenHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="4CB-OB-Vd5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Po-aN-T0f">
-                                <rect key="frame" x="253" y="297" width="74" height="30"/>
+                                <rect key="frame" x="248" y="344" width="91" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Dunes Hall"/>
                                 <connections>
                                     <action selector="openDunesHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="w7H-G4-7zs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgx-s6-bh5">
-                                <rect key="frame" x="248" y="373" width="84" height="30"/>
+                                <rect key="frame" x="242" y="421" width="103" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Gavillan Hall"/>
                                 <connections>
                                     <action selector="openGavilanHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="tQI-dQ-5qu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to CSUMB!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl0-jf-Zza">
-                                <rect key="frame" x="98" y="183" width="218" height="29"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="csumbLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hIO-Hr-ob9">
+                                <rect key="frame" x="-19" y="54" width="433" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU3-qq-Ak9">
+                                <rect key="frame" x="250" y="662" width="88" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Heron Hall"/>
+                                <connections>
+                                    <action selector="openHeronHallMaps:" destination="vey-6c-keF" eventType="touchUpInside" id="m2B-Jg-lhc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1H8-sf-KKX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -213,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6g-kA-EgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="501" y="2048"/>
+            <point key="canvasLocation" x="500.00000000000006" y="2047.7678571428571"/>
         </scene>
         <!--Add Class View Controller-->
         <scene sceneID="GEo-WB-1Ae">
@@ -989,6 +996,7 @@
         <image name="building.columns" catalog="system" width="128" height="113"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="campusbuddy" width="1060" height="565"/>
+        <image name="csumbLogo" width="1488" height="856"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <systemColor name="labelColor">
