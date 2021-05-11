@@ -7,19 +7,33 @@
 
 import UIKit
 import Parse
-
-class HomeScreenViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+import HTMLKit
+import WebKit
+class HomeScreenViewController: UIViewController, WKNavigationDelegate {
+    private let webView: WKWebView = {
+            let webView = WKWebView(frame: .zero)
+            return webView;
+        }()
+        let urlString = "https://csumb.edu/events/"
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            view.addSubview(webView)
+            webView.frame = view.bounds
+            webView.navigationDelegate = self
+            guard let url = URL(string: urlString)else{
+                return
+            }
+            webView.load(URLRequest(url:url))
+        }
     
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
-        
-        self.performSegue(withIdentifier: "logoutSegue" , sender: nil)
+        UserDefaults.standard.setValue(false, forKey: "userLoggedIn")
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func goBack(_ sender: Any) {
+        self.webView.goBack()
     }
     
     /*
