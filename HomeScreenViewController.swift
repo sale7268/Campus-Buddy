@@ -32,6 +32,10 @@ class HomeScreenViewController: UIViewController, WKNavigationDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func goBack(_ sender: Any) {
+        self.webView.goBack()
+    }
+    
     /*
     // MARK: - Navigation
 

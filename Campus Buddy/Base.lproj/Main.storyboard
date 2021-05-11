@@ -352,6 +352,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="4GL-1d-lGf">
+                        <barButtonItem key="leftBarButtonItem" title="Go Back Page" id="2Un-5G-aTU">
+                            <connections>
+                                <action selector="goBack:" destination="d9m-yQ-uNx" id="1eP-bj-Cew"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="G2C-SS-sNF">
                             <connections>
                                 <action selector="onLogout:" destination="d9m-yQ-uNx" id="2tN-wU-xFi"/>
