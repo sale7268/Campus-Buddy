@@ -28,8 +28,8 @@ class HomeScreenViewController: UIViewController, WKNavigationDelegate {
     
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
-        
-        self.performSegue(withIdentifier: "logoutSegue" , sender: nil)
+        UserDefaults.standard.setValue(false, forKey: "userLoggedIn")
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*
